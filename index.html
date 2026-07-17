@@ -4,12 +4,11 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Rana Bakery · Fresh Bakes on the Road to Rohtang · Bahang, Manali</title>
-<meta name="description" content="Rana Bakery, Bahang, Manali — cream rolls, jeera biscuits, coconut macaroons, custom cakes, pizza & coffee. Open daily till 9 pm. Order on WhatsApp." />
+<meta name="description" content="Rana Bakery, Bahang, Manali — serving since 1992. Cream rolls, coconut macaroons, jeera biscuits, doughnuts, burgers, custom cakes, pizza, coffee & healthy आटा ब्रैड. Making Moments Sweeter. Order on WhatsApp." />
 
 <!--
-  IMAGES: All photos below are high-quality Unsplash placeholders standing in for
-  Rana Bakery's own product photos. Replace the images.unsplash.com URLs with the
-  bakery's real cream rolls, cakes, pizza and shopfront shots before going live.
+  IMAGES: All photos are Rana Bakery's own — real product, cake and baking shots
+  from the bakery in Bahang, Manali. Served with relative paths from images/.
 -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -80,8 +79,9 @@
   }
   header.scrolled{border-color:var(--line);box-shadow:0 8px 30px -24px rgba(74,42,24,.6)}
   .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
-  .logo{font-family:"Fraunces",serif;font-size:1.5rem;font-weight:600;color:var(--brown-deep);letter-spacing:-.02em;display:flex;align-items:center;gap:.5rem}
+  .logo{font-family:"Fraunces",serif;font-size:1.5rem;font-weight:600;color:var(--brown-deep);letter-spacing:-.02em;display:flex;align-items:center;gap:.55rem}
   .logo .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);display:inline-block}
+  .logo-img{height:40px;width:auto;display:block}
   .nav-links{display:flex;align-items:center;gap:30px}
   .nav-links a{font-weight:600;font-size:.94rem;color:var(--ink-soft);position:relative;transition:color .2s}
   .nav-links a:hover{color:var(--accent-deep)}
@@ -92,7 +92,7 @@
 
   /* Hero */
   .hero{position:relative;min-height:min(92vh,760px);display:flex;align-items:flex-end;
-    background:#3a2317 url("https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1600&q=70") center/cover no-repeat;
+    background:#3a2317 url("images/chococakeR.jpg") center/cover no-repeat;
     padding:0;}
   .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,29,21,.28) 0%,rgba(43,29,21,.35) 45%,rgba(43,29,21,.86) 100%)}
   .hero .wrap{position:relative;z-index:2;padding-bottom:clamp(48px,7vw,90px);padding-top:clamp(60px,10vw,90px)}
@@ -100,7 +100,8 @@
     border:1px solid rgba(255,253,249,.28);color:#fff;padding:.5em 1em;border-radius:999px;font-size:.82rem;font-weight:600;margin-bottom:22px;backdrop-filter:blur(4px)}
   .hero-badge .stars{color:var(--gold);letter-spacing:2px}
   .hero h1{color:#fff;font-size:clamp(2.5rem,6.6vw,5rem);max-width:16ch;text-shadow:0 2px 30px rgba(0,0,0,.35)}
-  .hero .sub{color:rgba(255,253,249,.9);font-size:clamp(1rem,1.6vw,1.25rem);margin:20px 0 30px;font-weight:500;letter-spacing:.02em}
+  .hero .tagline{font-family:"Fraunces",serif;font-style:italic;color:var(--gold);font-size:clamp(1.15rem,2.2vw,1.6rem);margin:16px 0 0;text-shadow:0 2px 18px rgba(0,0,0,.4)}
+  .hero .sub{color:rgba(255,253,249,.9);font-size:clamp(1rem,1.6vw,1.25rem);margin:14px 0 30px;font-weight:500;letter-spacing:.02em}
   .hero .sub b{color:var(--gold);font-weight:700}
   .hero-cta{display:flex;flex-wrap:wrap;gap:14px}
 
@@ -127,7 +128,7 @@
   /* Custom cake strip */
   .strip{background:linear-gradient(135deg,var(--brown-deep),var(--brown));color:#fff;position:relative;overflow:hidden}
   .strip::before{content:"";position:absolute;inset:0;
-    background:url("https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=1400&q=70") center/cover;
+    background:url("images/3.jpg") center/cover;
     opacity:.16;mix-blend-mode:screen}
   .strip .inner{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
   .strip h2{color:#fff;font-size:clamp(2rem,4.2vw,3rem)}
@@ -179,8 +180,26 @@
   .map iframe{width:100%;height:100%;min-height:340px;border:0;display:block;filter:saturate(1.05)}
   @media(max-width:820px){.visit .inner{grid-template-columns:1fr}}
 
+  /* Also from the counter — chips for items without a photo */
+  .also{margin-top:clamp(28px,4vw,42px);padding-top:clamp(24px,3vw,32px);border-top:1px solid var(--line)}
+  .also .lbl{font-family:"Manrope",sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;font-weight:700;color:var(--accent-deep);margin:0 0 14px}
+  .chips{display:flex;flex-wrap:wrap;gap:10px}
+  .chip{display:inline-flex;align-items:center;gap:.5em;background:var(--cream);border:1px solid var(--line);color:var(--brown-deep);
+    font-weight:600;font-size:.9rem;padding:.55em 1.05em;border-radius:999px}
+  .chip .d{width:7px;height:7px;border-radius:50%;background:var(--accent)}
+
+  /* Gallery — From our ovens */
+  .gallery{background:var(--cream)}
+  .gal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+  .gal-item{border-radius:14px;overflow:hidden;background:var(--cream-2);aspect-ratio:1/1;
+    box-shadow:0 8px 24px -20px rgba(74,42,24,.6)}
+  .gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+  .gal-item:hover img{transform:scale(1.07)}
+  @media(min-width:640px){.gal-grid{grid-template-columns:repeat(auto-fill,minmax(190px,1fr))}}
+
   /* Footer */
   footer{background:var(--brown-deep);color:rgba(255,253,249,.82);padding:56px 0 30px}
+  .foot-logo{height:52px;width:auto;display:block;margin-bottom:16px;opacity:.95}
   .foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px}
   .foot .hindi{font-family:"Fraunces",serif;font-size:1.6rem;color:#fff;margin-bottom:8px}
   .foot h5{font-family:"Manrope",sans-serif;text-transform:uppercase;letter-spacing:.14em;font-size:.74rem;color:var(--gold);margin:0 0 14px;font-weight:700}
@@ -211,9 +230,10 @@
 <!-- ============ HEADER ============ -->
 <header id="top">
   <div class="wrap nav">
-    <a href="#top" class="logo"><span class="dot"></span>Rana Bakery</a>
+    <a href="#top" class="logo"><img class="logo-img" src="images/logo.png" alt="Rana Bakery logo" />Rana Bakery</a>
     <nav class="nav-links">
       <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
       <a href="#about">About</a>
       <a href="#reviews">Reviews</a>
       <a href="#visit">Visit</a>
@@ -230,8 +250,9 @@
 <!-- ============ HERO ============ -->
 <section class="hero" aria-label="Welcome to Rana Bakery">
   <div class="wrap">
-    <span class="hero-badge"><span class="stars">★</span> 4.1 · 110 Google reviews</span>
+    <span class="hero-badge"><span class="stars">★</span> 4.1 · 110 Google reviews &nbsp;·&nbsp; Serving Manali since 1992</span>
     <h1 class="reveal">Fresh from the oven, on the road to Rohtang</h1>
+    <p class="tagline reveal">Making Moments Sweeter</p>
     <p class="sub reveal">Bahang · Manali &nbsp;—&nbsp; <b>a favourite snack stop</b> for travellers driving up to the Atal Tunnel &amp; Rohtang Pass.</p>
     <div class="hero-cta reveal">
       <a class="btn btn-wa" href="https://wa.me/918219885264?text=Namaste!%20Cake%20order%20karna%20hai" target="_blank" rel="noopener">
@@ -255,40 +276,52 @@
 
       <article class="card reveal">
         <div class="ph"><span class="tag">Bestseller</span>
-          <img loading="lazy" src="https://images.unsplash.com/photo-1558326567-98ae2405596b?auto=format&fit=crop&w=1200&q=70" alt="Flaky cream rolls" /></div>
-        <div class="body"><h3>Cream Rolls</h3><p>Crisp, golden pastry curled around soft sweet cream — the one everyone comes back for.</p></div>
+          <img loading="lazy" src="images/cinemenR.jpg" alt="Soft glazed cream rolls" /></div>
+        <div class="body"><h3>Cream Rolls</h3><p>Soft, glazed and curled around sweet cream — the one everyone comes back for.</p></div>
       </article>
 
       <article class="card reveal">
         <div class="ph">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=1200&q=70" alt="Crunchy jeera biscuits" /></div>
-        <div class="body"><h3>Jeera Biscuits</h3><p>Buttery, cumin-kissed and made for chai — that perfect crunch with your cutting.</p></div>
+          <img loading="lazy" src="images/PastryR.jpg" alt="Fresh cream pastry slice" /></div>
+        <div class="body"><h3>Fresh Pastries</h3><p>Layered, creamy and freshly cut through the day — the perfect little treat with chai.</p></div>
       </article>
 
       <article class="card reveal">
         <div class="ph"><span class="tag">Bestseller</span>
-          <img loading="lazy" src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=1200&q=70" alt="Coconut macaroons" /></div>
-        <div class="body"><h3>Coconut Macaroons</h3><p>Toasty, chewy coconut mounds — reviewers call them the best they've ever tasted.</p></div>
+          <img loading="lazy" src="images/doughnutR.jpg" alt="Chocolate sprinkle doughnut" /></div>
+        <div class="body"><h3>Doughnuts</h3><p>Pillowy rings dipped in chocolate and rainbow sprinkles — a favourite with the kids.</p></div>
       </article>
 
       <article class="card reveal">
         <div class="ph">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=1200&q=70" alt="Chocolate balls" /></div>
-        <div class="body"><h3>Chocolate Balls</h3><p>Rich, melt-in-the-mouth cocoa bites — mouth-watering and impossible to stop at one.</p></div>
-      </article>
-
-      <article class="card reveal">
-        <div class="ph"><span class="tag">Made to order</span>
-          <img loading="lazy" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1200&q=70" alt="Fresh custom cake" /></div>
-        <div class="body"><h3>Custom Cakes</h3><p>Fresh cakes baked to your theme — birthdays, weddings and that famous unicorn cake.</p></div>
+          <img loading="lazy" src="images/burgerR.jpg" alt="Loaded burger with fresh patty" /></div>
+        <div class="body"><h3>Burgers &amp; Patties</h3><p>Hot patties in a soft sesame bun — the hearty savoury stop between all the sweet treats.</p></div>
       </article>
 
       <article class="card reveal">
         <div class="ph">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=70" alt="Fresh wood-fired pizza" /></div>
-        <div class="body"><h3>Fresh Pizza</h3><p>Hot, cheesy and generous — the savoury stop between all those sweet treats.</p></div>
+          <img loading="lazy" src="images/pizzaR.jpg" alt="Cheesy fresh-baked pizza" /></div>
+        <div class="body"><h3>Fresh Pizza</h3><p>Hot, cheesy and generous, baked to order — comfort food on the mountain road.</p></div>
       </article>
 
+      <article class="card reveal">
+        <div class="ph"><span class="tag">Healthy bake</span>
+          <img loading="lazy" src="images/buns.png" alt="Healthy whole-wheat Aata Bread loaves" /></div>
+        <div class="body"><h3>आटा ब्रैड · Aata Bread</h3><p>Wholesome whole-wheat bread &amp; aata buns — the healthy bake our regulars ask for by name.</p></div>
+      </article>
+
+    </div>
+
+    <div class="also reveal">
+      <p class="lbl">Also from the counter</p>
+      <div class="chips">
+        <span class="chip"><span class="d"></span>Coconut Macaroons</span>
+        <span class="chip"><span class="d"></span>Jeera Biscuits</span>
+        <span class="chip"><span class="d"></span>Chocolate Balls</span>
+        <span class="chip"><span class="d"></span>Buns &amp; Fan</span>
+        <span class="chip"><span class="d"></span>Fresh Coffee</span>
+        <span class="chip"><span class="d"></span>Custom Cakes</span>
+      </div>
     </div>
   </div>
 </section>
@@ -306,7 +339,7 @@
       </a>
     </div>
     <div class="strip-img reveal">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=1200&q=70" alt="Decorated celebration cake" />
+      <img loading="lazy" src="images/new1.png" alt="Custom chocolate celebration cake with sprinkles" />
     </div>
   </div>
 </section>
@@ -315,14 +348,37 @@
 <section class="about" id="about">
   <div class="wrap inner">
     <div class="about-img reveal">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&q=70" alt="Fresh bakes on display at the bakery" />
+      <img loading="lazy" src="images/maidaR.jpg" alt="Hands kneading fresh dough at Rana Bakery" />
     </div>
     <div class="reveal">
-      <p class="eyebrow">Our story</p>
-      <h2 style="font-size:clamp(1.9rem,4vw,2.8rem);color:var(--brown-deep)">A little family bakery in Bahang</h2>
-      <p>Right on Rohtang Road, opposite GSS School, our ovens start early. We're a family bakery serving the people of Bahang and the steady stream of travellers heading up to the Atal Tunnel and Rohtang Pass.</p>
-      <p>Everything is baked fresh through the day — cream rolls and biscuits for a quick roadside snack, coffee to warm you up in the mountain air, and custom cakes made with care for the special days. Fair prices, a warm welcome, and that same taste people remember long after the drive home.</p>
-      <p class="signature">— See you at Bahang. 🏔️</p>
+      <p class="eyebrow">Our story · since 1992</p>
+      <h2 style="font-size:clamp(1.9rem,4vw,2.8rem);color:var(--brown-deep)">From a village in Mandi to the banks of the Beas</h2>
+      <p>It began with a boy from a remote village in Mandi district, chasing a dream far bigger than the hills he grew up in. After years of trying his hand at everything — even running a small roadside tea stall — Bhim Sen Rana and his wife Meena took two little rooms and a shop in Bahang, near Manali, and in 1992 fired up the very first Rana Bakery oven.</p>
+      <p>More than three decades on, on the banks of the Beas, we're still baking the same way — fresh every day, with the same warmth — for the families of Manali and every traveller who stops by on the road up. That is what <em>Making Moments Sweeter</em> has always meant to us.</p>
+      <p class="signature">— The Rana family, Bahang 🏔️</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Straight from the counter</p>
+      <h2>From our ovens</h2>
+      <p class="lede">Real cakes and bakes from the Rana Bakery kitchen in Bahang — the ones we've made for birthdays, weddings and everyday moments.</p>
+    </div>
+    <div class="gal-grid reveal">
+      <figure class="gal-item"><img loading="lazy" src="images/0.jpg" alt="Freshly baked chocolate-chip muffins" /></figure>
+      <figure class="gal-item"><img loading="lazy" src="images/1.jpg" alt="Chocolate drip celebration cake" /></figure>
+      <figure class="gal-item"><img loading="lazy" src="images/2.jpg" alt="Rana Bakery cake" /></figure>
+      <figure class="gal-item"><img loading="lazy" src="images/3.jpg" alt="Chocolate birthday cake with candles" /></figure>
+      <figure class="gal-item"><img loading="lazy" src="images/4.jpg" alt="Rana Bakery cake" /></figure>
+      <figure class="gal-item"><img loading="lazy" src="images/5.jpg" alt="Fresh pineapple cream pastries" /></figure>
+      <figure class="gal-item"><img loading="lazy" src="images/6.jpg" alt="Rana Bakery cake" /></figure>
+      <figure class="gal-item"><img loading="lazy" src="images/7.jpg" alt="Flower-basket cream cake" /></figure>
+      <figure class="gal-item"><img loading="lazy" src="images/8.jpg" alt="Rana Bakery cake" /></figure>
+      <figure class="gal-item"><img loading="lazy" src="images/9.jpg" alt="Colourful rose cream cake" /></figure>
     </div>
   </div>
 </section>
@@ -410,8 +466,9 @@
   <div class="wrap">
     <div class="foot">
       <div>
+        <img class="foot-logo" src="images/logo_white.png" alt="Rana Bakery" />
         <div class="hindi">राणा बेकर्स बहांग</div>
-        <p style="margin:0;max-width:34ch">Fresh bakes, cakes, coffee &amp; snacks on Rohtang Road — baked daily in Bahang, Manali.</p>
+        <p style="margin:0 0 10px;max-width:34ch">Serving Manali since 1992 · <em>Making Moments Sweeter</em>. Fresh bakes, cakes, coffee &amp; snacks — baked daily in Bahang, Manali.</p>
       </div>
       <div>
         <h5>Visit</h5>
