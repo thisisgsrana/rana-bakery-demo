@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rana Bakery · Fresh Bakes on the Road to Rohtang · Bahang, Manali</title>
+<meta name="description" content="Rana Bakery, Bahang, Manali — cream rolls, jeera biscuits, coconut macaroons, custom cakes, pizza & coffee. Open daily till 9 pm. Order on WhatsApp." />
+
+<!--
+  IMAGES: All photos below are high-quality Unsplash placeholders standing in for
+  Rana Bakery's own product photos. Replace the images.unsplash.com URLs with the
+  bakery's real cream rolls, cakes, pizza and shopfront shots before going live.
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --cream:#faf4ea;
+    --cream-2:#f3e8d6;
+    --paper:#fffdf9;
+    --ink:#2b1d15;
+    --ink-soft:#5b4636;
+    --brown:#6b3f27;
+    --brown-deep:#4a2a18;
+    --accent:#c9752c;      /* warm terracotta/caramel */
+    --accent-deep:#a95c1c;
+    --gold:#d9a441;
+    --line:rgba(107,63,39,.16);
+    --shadow:0 18px 50px -22px rgba(74,42,24,.5);
+    --radius:20px;
+    --maxw:1180px;
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:"Manrope",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:500;line-height:1.08;letter-spacing:-.01em;margin:0}
+  section{padding:clamp(56px,9vw,110px) 0}
+  .wrap{width:min(100% - 40px,var(--maxw));margin-inline:auto}
+  .eyebrow{
+    font-family:"Manrope",sans-serif;text-transform:uppercase;letter-spacing:.22em;
+    font-size:.72rem;font-weight:700;color:var(--accent-deep);margin:0 0 14px;
+  }
+  .lede{font-size:clamp(1.02rem,1.4vw,1.18rem);color:var(--ink-soft);max-width:60ch}
+
+  /* Buttons */
+  .btn{
+    display:inline-flex;align-items:center;gap:.55em;
+    font-weight:600;font-size:.98rem;padding:.85em 1.4em;border-radius:999px;
+    border:1.5px solid transparent;cursor:pointer;transition:transform .2s ease,box-shadow .2s ease,background .2s ease;
+    white-space:nowrap;
+  }
+  .btn:hover{transform:translateY(-2px)}
+  .btn-wa{background:#25d366;color:#08331b;box-shadow:0 12px 28px -12px rgba(37,211,102,.7)}
+  .btn-wa:hover{background:#1fc25c}
+  .btn-solid{background:var(--accent);color:#fff;box-shadow:0 12px 28px -14px rgba(201,117,44,.8)}
+  .btn-solid:hover{background:var(--accent-deep)}
+  .btn-ghost{background:transparent;color:var(--brown-deep);border-color:var(--line)}
+  .btn-ghost:hover{background:var(--paper);border-color:var(--accent)}
+  .btn svg{width:1.15em;height:1.15em;flex:none}
+
+  /* Header */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(250,244,234,.82);backdrop-filter:blur(12px);
+    border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s;
+  }
+  header.scrolled{border-color:var(--line);box-shadow:0 8px 30px -24px rgba(74,42,24,.6)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+  .logo{font-family:"Fraunces",serif;font-size:1.5rem;font-weight:600;color:var(--brown-deep);letter-spacing:-.02em;display:flex;align-items:center;gap:.5rem}
+  .logo .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);display:inline-block}
+  .nav-links{display:flex;align-items:center;gap:30px}
+  .nav-links a{font-weight:600;font-size:.94rem;color:var(--ink-soft);position:relative;transition:color .2s}
+  .nav-links a:hover{color:var(--accent-deep)}
+  .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;background:var(--accent);transition:width .25s}
+  .nav-links a:hover::after{width:100%}
+  .nav-cta{display:flex;align-items:center;gap:12px}
+  @media(max-width:860px){.nav-links{display:none}}
+
+  /* Hero */
+  .hero{position:relative;min-height:min(92vh,760px);display:flex;align-items:flex-end;
+    background:#3a2317 url("https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1600&q=70") center/cover no-repeat;
+    padding:0;}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,29,21,.28) 0%,rgba(43,29,21,.35) 45%,rgba(43,29,21,.86) 100%)}
+  .hero .wrap{position:relative;z-index:2;padding-bottom:clamp(48px,7vw,90px);padding-top:clamp(60px,10vw,90px)}
+  .hero-badge{display:inline-flex;align-items:center;gap:.6em;background:rgba(255,253,249,.14);
+    border:1px solid rgba(255,253,249,.28);color:#fff;padding:.5em 1em;border-radius:999px;font-size:.82rem;font-weight:600;margin-bottom:22px;backdrop-filter:blur(4px)}
+  .hero-badge .stars{color:var(--gold);letter-spacing:2px}
+  .hero h1{color:#fff;font-size:clamp(2.5rem,6.6vw,5rem);max-width:16ch;text-shadow:0 2px 30px rgba(0,0,0,.35)}
+  .hero .sub{color:rgba(255,253,249,.9);font-size:clamp(1rem,1.6vw,1.25rem);margin:20px 0 30px;font-weight:500;letter-spacing:.02em}
+  .hero .sub b{color:var(--gold);font-weight:700}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:14px}
+
+  /* Section headings */
+  .sec-head{max-width:640px;margin-bottom:clamp(34px,5vw,56px)}
+  .sec-head h2{font-size:clamp(2rem,4.4vw,3.1rem);color:var(--brown-deep)}
+  .sec-head p{margin-top:16px}
+
+  /* Signature cards */
+  .bakes{background:var(--paper)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:26px}
+  .card{background:var(--cream);border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);
+    box-shadow:0 10px 30px -24px rgba(74,42,24,.6);transition:transform .3s ease,box-shadow .3s ease}
+  .card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+  .card .ph{aspect-ratio:4/3;background:var(--cream-2);position:relative;overflow:hidden}
+  .card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+  .card:hover .ph img{transform:scale(1.06)}
+  .tag{position:absolute;top:14px;left:14px;background:var(--accent);color:#fff;font-size:.68rem;font-weight:700;
+    text-transform:uppercase;letter-spacing:.12em;padding:.4em .8em;border-radius:999px;box-shadow:0 6px 16px -8px rgba(0,0,0,.5)}
+  .card .body{padding:22px 22px 26px}
+  .card h3{font-size:1.4rem;color:var(--brown-deep)}
+  .card p{margin:8px 0 0;color:var(--ink-soft);font-size:.96rem}
+
+  /* Custom cake strip */
+  .strip{background:linear-gradient(135deg,var(--brown-deep),var(--brown));color:#fff;position:relative;overflow:hidden}
+  .strip::before{content:"";position:absolute;inset:0;
+    background:url("https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=1400&q=70") center/cover;
+    opacity:.16;mix-blend-mode:screen}
+  .strip .inner{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+  .strip h2{color:#fff;font-size:clamp(2rem,4.2vw,3rem)}
+  .strip p{color:rgba(255,253,249,.85);margin:18px 0 26px;font-size:1.05rem}
+  .strip .unicorn{font-style:italic;color:var(--gold);font-family:"Fraunces",serif}
+  .strip-img{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/5;background:#5a3521}
+  .strip-img img{width:100%;height:100%;object-fit:cover}
+  @media(max-width:820px){.strip .inner{grid-template-columns:1fr}.strip-img{aspect-ratio:16/10;order:-1}}
+
+  /* About */
+  .about{background:var(--cream)}
+  .about .inner{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(30px,5vw,64px);align-items:center}
+  .about-img{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:1/1;background:var(--cream-2)}
+  .about-img img{width:100%;height:100%;object-fit:cover}
+  .about p{margin-top:18px;color:var(--ink-soft);font-size:1.04rem}
+  .about .signature{margin-top:26px;font-family:"Fraunces",serif;font-style:italic;font-size:1.3rem;color:var(--brown)}
+  @media(max-width:820px){.about .inner{grid-template-columns:1fr}.about-img{aspect-ratio:16/10;order:-1}}
+
+  /* Reviews */
+  .reviews{background:var(--paper)}
+  .rev-top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:clamp(30px,5vw,52px)}
+  .rating-badge{display:inline-flex;align-items:center;gap:14px;background:var(--cream);border:1px solid var(--line);
+    border-radius:16px;padding:14px 20px;box-shadow:0 10px 30px -26px rgba(74,42,24,.7)}
+  .rating-badge .num{font-family:"Fraunces",serif;font-size:2.2rem;color:var(--brown-deep);line-height:1}
+  .rating-badge .stars{color:var(--gold);font-size:1.1rem;letter-spacing:2px}
+  .rating-badge .meta{font-size:.82rem;color:var(--ink-soft);font-weight:600}
+  .quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+  .quote{background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px;position:relative}
+  .quote .mark{font-family:"Fraunces",serif;font-size:3.4rem;color:var(--accent);line-height:.5;opacity:.5;height:.5em;display:block}
+  .quote p{font-size:1.06rem;color:var(--ink);margin:6px 0 16px;font-family:"Fraunces",serif;font-weight:400}
+  .quote .who{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--accent-deep);display:flex;align-items:center;gap:.5em}
+  .quote .who .stars{color:var(--gold);letter-spacing:1px}
+
+  /* Visit */
+  .visit{background:var(--cream)}
+  .visit .inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,50px);align-items:stretch}
+  .visit-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(26px,4vw,40px);box-shadow:0 12px 40px -30px rgba(74,42,24,.7)}
+  .visit-row{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .visit-row:last-child{border-bottom:0}
+  .visit-row .ic{width:40px;height:40px;flex:none;border-radius:12px;background:var(--cream-2);display:grid;place-items:center;color:var(--accent-deep)}
+  .visit-row .ic svg{width:20px;height:20px}
+  .visit-row h4{margin:0 0 3px;font-family:"Manrope",sans-serif;font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-soft);font-weight:700}
+  .visit-row p{margin:0;color:var(--ink);font-weight:500}
+  .badges{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}
+  .pill{display:inline-flex;align-items:center;gap:.45em;background:var(--cream-2);color:var(--brown-deep);font-weight:600;
+    font-size:.84rem;padding:.5em .9em;border-radius:999px}
+  .pill .d{width:7px;height:7px;border-radius:50%;background:#25d366}
+  .map{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);min-height:340px;border:1px solid var(--line)}
+  .map iframe{width:100%;height:100%;min-height:340px;border:0;display:block;filter:saturate(1.05)}
+  @media(max-width:820px){.visit .inner{grid-template-columns:1fr}}
+
+  /* Footer */
+  footer{background:var(--brown-deep);color:rgba(255,253,249,.82);padding:56px 0 30px}
+  .foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px}
+  .foot .hindi{font-family:"Fraunces",serif;font-size:1.6rem;color:#fff;margin-bottom:8px}
+  .foot h5{font-family:"Manrope",sans-serif;text-transform:uppercase;letter-spacing:.14em;font-size:.74rem;color:var(--gold);margin:0 0 14px;font-weight:700}
+  .foot a{display:block;color:rgba(255,253,249,.82);margin-bottom:9px;transition:color .2s}
+  .foot a:hover{color:#fff}
+  .foot-bottom{border-top:1px solid rgba(255,253,249,.14);margin-top:40px;padding-top:22px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:.82rem;color:rgba(255,253,249,.6)}
+  .foot-bottom a{color:var(--gold)}
+  @media(max-width:720px){.foot{grid-template-columns:1fr;gap:26px}}
+
+  /* Floating WhatsApp */
+  .fab{position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;border-radius:50%;
+    background:#25d366;display:grid;place-items:center;box-shadow:0 14px 34px -10px rgba(37,211,102,.75);
+    transition:transform .2s ease}
+  .fab:hover{transform:scale(1.08)}
+  .fab svg{width:30px;height:30px;fill:#fff}
+  .fab::after{content:"";position:absolute;inset:0;border-radius:50%;box-shadow:0 0 0 0 rgba(37,211,102,.5);animation:pulse 2.4s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.45)}70%{box-shadow:0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+
+  /* Scroll reveal — content is visible by default; JS only animates entrance */
+  .reveal{opacity:1;transform:none}
+  .js .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+  .js .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header id="top">
+  <div class="wrap nav">
+    <a href="#top" class="logo"><span class="dot"></span>Rana Bakery</a>
+    <nav class="nav-links">
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-wa" href="https://wa.me/918219885264?text=Namaste!%20Cake%20order%20karna%20hai" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.2s-.8 1-.9 1.1c-.2.2-.3.2-.6.1-1.6-.8-2.7-1.5-3.7-3.4-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6 2 .8 2.7.9 3.7.8.6-.1 1.8-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/><path d="M12 2A10 10 0 0 0 3.5 17.2L2 22l4.9-1.5A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-label="Welcome to Rana Bakery">
+  <div class="wrap">
+    <span class="hero-badge"><span class="stars">★</span> 4.1 · 110 Google reviews</span>
+    <h1 class="reveal">Fresh from the oven, on the road to Rohtang</h1>
+    <p class="sub reveal">Bahang · Manali &nbsp;—&nbsp; <b>a favourite snack stop</b> for travellers driving up to the Atal Tunnel &amp; Rohtang Pass.</p>
+    <div class="hero-cta reveal">
+      <a class="btn btn-wa" href="https://wa.me/918219885264?text=Namaste!%20Cake%20order%20karna%20hai" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.2s-.8 1-.9 1.1c-.2.2-.3.2-.6.1-1.6-.8-2.7-1.5-3.7-3.4-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6 2 .8 2.7.9 3.7.8.6-.1 1.8-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/><path d="M12 2A10 10 0 0 0 3.5 17.2L2 22l4.9-1.5A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+        Order on WhatsApp
+      </a>
+      <a class="btn btn-ghost" href="#menu" style="background:rgba(255,253,249,.92)">See Menu</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SIGNATURE BAKES ============ -->
+<section class="bakes" id="menu">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Baked fresh every day</p>
+      <h2>Our signature bakes</h2>
+      <p class="lede">The bakes that keep tourists stopping and locals coming back — from flaky cream rolls to a whole custom cake for your celebration.</p>
+    </div>
+    <div class="grid">
+
+      <article class="card reveal">
+        <div class="ph"><span class="tag">Bestseller</span>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1558326567-98ae2405596b?auto=format&fit=crop&w=1200&q=70" alt="Flaky cream rolls" /></div>
+        <div class="body"><h3>Cream Rolls</h3><p>Crisp, golden pastry curled around soft sweet cream — the one everyone comes back for.</p></div>
+      </article>
+
+      <article class="card reveal">
+        <div class="ph">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=1200&q=70" alt="Crunchy jeera biscuits" /></div>
+        <div class="body"><h3>Jeera Biscuits</h3><p>Buttery, cumin-kissed and made for chai — that perfect crunch with your cutting.</p></div>
+      </article>
+
+      <article class="card reveal">
+        <div class="ph"><span class="tag">Bestseller</span>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=1200&q=70" alt="Coconut macaroons" /></div>
+        <div class="body"><h3>Coconut Macaroons</h3><p>Toasty, chewy coconut mounds — reviewers call them the best they've ever tasted.</p></div>
+      </article>
+
+      <article class="card reveal">
+        <div class="ph">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=1200&q=70" alt="Chocolate balls" /></div>
+        <div class="body"><h3>Chocolate Balls</h3><p>Rich, melt-in-the-mouth cocoa bites — mouth-watering and impossible to stop at one.</p></div>
+      </article>
+
+      <article class="card reveal">
+        <div class="ph"><span class="tag">Made to order</span>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1200&q=70" alt="Fresh custom cake" /></div>
+        <div class="body"><h3>Custom Cakes</h3><p>Fresh cakes baked to your theme — birthdays, weddings and that famous unicorn cake.</p></div>
+      </article>
+
+      <article class="card reveal">
+        <div class="ph">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=70" alt="Fresh wood-fired pizza" /></div>
+        <div class="body"><h3>Fresh Pizza</h3><p>Hot, cheesy and generous — the savoury stop between all those sweet treats.</p></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CUSTOM CAKES STRIP ============ -->
+<section class="strip" aria-label="Custom cakes">
+  <div class="wrap inner">
+    <div class="reveal">
+      <p class="eyebrow" style="color:var(--gold)">Order ahead</p>
+      <h2>A cake made for your moment</h2>
+      <p>Birthdays, weddings, anniversaries or a surprise on the way to the mountains — we bake fresh, custom cakes to your theme and colours. Ask us about our much-loved <span class="unicorn">custom Unicorn cake</span>. Message a day ahead and we'll have it ready.</p>
+      <a class="btn btn-wa" href="https://wa.me/918219885264?text=Namaste!%20Cake%20order%20karna%20hai" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.2s-.8 1-.9 1.1c-.2.2-.3.2-.6.1-1.6-.8-2.7-1.5-3.7-3.4-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6 2 .8 2.7.9 3.7.8.6-.1 1.8-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/><path d="M12 2A10 10 0 0 0 3.5 17.2L2 22l4.9-1.5A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+        Order your cake
+      </a>
+    </div>
+    <div class="strip-img reveal">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=1200&q=70" alt="Decorated celebration cake" />
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="wrap inner">
+    <div class="about-img reveal">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&q=70" alt="Fresh bakes on display at the bakery" />
+    </div>
+    <div class="reveal">
+      <p class="eyebrow">Our story</p>
+      <h2 style="font-size:clamp(1.9rem,4vw,2.8rem);color:var(--brown-deep)">A little family bakery in Bahang</h2>
+      <p>Right on Rohtang Road, opposite GSS School, our ovens start early. We're a family bakery serving the people of Bahang and the steady stream of travellers heading up to the Atal Tunnel and Rohtang Pass.</p>
+      <p>Everything is baked fresh through the day — cream rolls and biscuits for a quick roadside snack, coffee to warm you up in the mountain air, and custom cakes made with care for the special days. Fair prices, a warm welcome, and that same taste people remember long after the drive home.</p>
+      <p class="signature">— See you at Bahang. 🏔️</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="rev-top">
+      <div class="sec-head reveal" style="margin-bottom:0">
+        <p class="eyebrow">What guests say</p>
+        <h2>Loved by locals &amp; travellers</h2>
+      </div>
+      <div class="rating-badge reveal">
+        <span class="num">4.1</span>
+        <div><div class="stars">★★★★☆</div><div class="meta">110 Google reviews</div></div>
+      </div>
+    </div>
+    <div class="quotes">
+      <figure class="quote reveal"><span class="mark">&ldquo;</span>
+        <p>Amazing bakery, loved cream rolls, jeera biscuits, coffee and so much more.</p>
+        <figcaption class="who">Google review <span class="stars">★★★★★</span></figcaption>
+      </figure>
+      <figure class="quote reveal"><span class="mark">&ldquo;</span>
+        <p>Don't miss the delicious cake and pizza and mouth-watering chocolate balls.</p>
+        <figcaption class="who">Google review <span class="stars">★★★★★</span></figcaption>
+      </figure>
+      <figure class="quote reveal"><span class="mark">&ldquo;</span>
+        <p>Delicious snack, the guy who served me was kind and polite, fair price!</p>
+        <figcaption class="who">Google review <span class="stars">★★★★★</span></figcaption>
+      </figure>
+      <figure class="quote reveal"><span class="mark">&ldquo;</span>
+        <p>You make the best coconut macaroons I have ever tasted.</p>
+        <figcaption class="who">Google review <span class="stars">★★★★★</span></figcaption>
+      </figure>
+    </div>
+    <div style="margin-top:34px" class="reveal">
+      <a class="btn btn-ghost" href="https://www.google.com/maps/search/Rana+Bakery+Bahang+Manali" target="_blank" rel="noopener">Read all reviews on Google →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VISIT ============ -->
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Come say hello</p>
+      <h2>Find us in Bahang</h2>
+    </div>
+    <div class="inner">
+      <div class="visit-card reveal">
+        <div class="visit-row">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.5-7-11a7 7 0 1 1 14 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <div><h4>Address</h4><p>Rohtang Road, Opposite GSS School,<br/>Bahang, Manali, HP 175103</p></div>
+        </div>
+        <div class="visit-row">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <div><h4>Hours</h4><p>Open daily · till 9 pm</p></div>
+        </div>
+        <div class="visit-row">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
+          <div><h4>Phone &amp; WhatsApp</h4><p><a href="tel:+918219885264">+91 82198 85264</a></p></div>
+        </div>
+        <div class="badges">
+          <span class="pill"><span class="d"></span>Delivery available</span>
+          <span class="pill"><span class="d"></span>Kerbside pickup</span>
+          <span class="pill">₹200–400 per person</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px">
+          <a class="btn btn-solid" href="https://www.google.com/maps?q=Rana+Bakery+Bahang+Manali" target="_blank" rel="noopener">Get Directions</a>
+          <a class="btn btn-wa" href="https://wa.me/918219885264?text=Namaste!%20Cake%20order%20karna%20hai" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.2s-.8 1-.9 1.1c-.2.2-.3.2-.6.1-1.6-.8-2.7-1.5-3.7-3.4-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6 2 .8 2.7.9 3.7.8.6-.1 1.8-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/><path d="M12 2A10 10 0 0 0 3.5 17.2L2 22l4.9-1.5A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+            Message us
+          </a>
+        </div>
+      </div>
+      <div class="map reveal">
+        <iframe title="Rana Bakery location on Google Maps" src="https://www.google.com/maps?q=Rana+Bakery+Bahang+Manali&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="hindi">राणा बेकर्स बहांग</div>
+        <p style="margin:0;max-width:34ch">Fresh bakes, cakes, coffee &amp; snacks on Rohtang Road — baked daily in Bahang, Manali.</p>
+      </div>
+      <div>
+        <h5>Visit</h5>
+        <a href="#visit">Rohtang Road, Bahang, Manali</a>
+        <a href="#visit">Open daily · till 9 pm</a>
+        <a href="https://www.google.com/maps?q=Rana+Bakery+Bahang+Manali" target="_blank" rel="noopener">Get directions →</a>
+      </div>
+      <div>
+        <h5>Order &amp; Contact</h5>
+        <a href="tel:+918219885264">+91 82198 85264</a>
+        <a href="https://wa.me/918219885264?text=Namaste!%20Cake%20order%20karna%20hai" target="_blank" rel="noopener">Order on WhatsApp →</a>
+        <a href="https://www.google.com/maps/search/Rana+Bakery+Bahang+Manali" target="_blank" rel="noopener">Reviews on Google →</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Rana Bakery · Bahang, Manali, HP 175103</span>
+      <span>Website by <a href="https://wa.me/918219885264" target="_blank" rel="noopener">Gagan</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<a class="fab" href="https://wa.me/918219885264?text=Namaste!%20Cake%20order%20karna%20hai" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.2s-.8 1-.9 1.1c-.2.2-.3.2-.6.1-1.6-.8-2.7-1.5-3.7-3.4-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6 2 .8 2.7.9 3.7.8.6-.1 1.8-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/><path d="M12 2A10 10 0 0 0 3.5 17.2L2 22l4.9-1.5A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+</a>
+
+<script>
+  // Progressive enhancement: mark JS active so reveal animations apply.
+  // Without JS, .reveal content stays fully visible (see CSS).
+  document.documentElement.classList.add('js');
+
+  // Header shadow on scroll
+  var header = document.querySelector('header');
+  var onScroll = function(){ header.classList.toggle('scrolled', window.scrollY > 8); };
+  onScroll();
+  window.addEventListener('scroll', onScroll, {passive:true});
+
+  // Scroll reveal via IntersectionObserver (graceful fallback: show all)
+  var reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {threshold:0.12, rootMargin:'0px 0px -8% 0px'});
+    reveals.forEach(function(el){ io.observe(el); });
+    // Safety net: some in-app browsers (WhatsApp/Instagram webviews) throttle
+    // IntersectionObserver — never leave content hidden.
+    setTimeout(function(){ reveals.forEach(function(el){ el.classList.add('in'); }); }, 1400);
+  } else {
+    reveals.forEach(function(el){ el.classList.add('in'); });
+  }
+</script>
+</body>
+</html>
