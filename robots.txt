@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ranabakery.in/sitemap.xml
+Sitemap: https://thisisgsrana.github.io/rana-bakery-demo/sitemap.xml
