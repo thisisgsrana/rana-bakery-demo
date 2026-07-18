@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Rana Bakery · Fresh Bakes on the Road to Rohtang · Bahang, Manali</title>
-<meta name="description" content="Rana Bakery, Bahang, Manali — serving since 1992. Cream rolls, coconut macaroons, jeera biscuits, doughnuts, burgers, custom cakes, pizza, coffee & healthy आटा ब्रैड. Making Moments Sweeter. Order on WhatsApp." />
+<meta name="description" content="Rana Bakery, Bahang, Manali — a family bakery since 1992, baked fresh every morning in small batches. Known for our brownies, fresh cream pastries, eggless cakes & donuts — plus chocolate cakes, coconut macaroons, custom cakes & coffee. Making Moments Sweeter. Order on WhatsApp." />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="https://thisisgsrana.github.io/rana-bakery-demo/" />
 
@@ -16,7 +16,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Rana Bakery" />
 <meta property="og:title" content="Rana Bakery · Fresh Bakes on the Road to Rohtang · Bahang, Manali" />
-<meta property="og:description" content="Serving Manali since 1992 — cream rolls, coconut macaroons, jeera biscuits, custom cakes, pizza, coffee & healthy आटा ब्रैड. Making Moments Sweeter. Order on WhatsApp." />
+<meta property="og:description" content="A family bakery in Bahang, Manali since 1992 — baked fresh every morning. Famous for brownies, fresh cream pastries, eggless cakes & donuts, plus chocolate cakes, coconut macaroons & custom cakes. Making Moments Sweeter. Order on WhatsApp." />
 <meta property="og:url" content="https://thisisgsrana.github.io/rana-bakery-demo/" />
 <meta property="og:image" content="https://thisisgsrana.github.io/rana-bakery-demo/images/chococakeR.jpg" />
 <meta property="og:locale" content="en_IN" />
@@ -24,7 +24,7 @@
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Rana Bakery · Fresh Bakes on the Road to Rohtang · Bahang, Manali" />
-<meta name="twitter:description" content="Serving Manali since 1992 — cream rolls, custom cakes, pizza, coffee & healthy आटा ब्रैड. Making Moments Sweeter. Order on WhatsApp." />
+<meta name="twitter:description" content="Family bakery in Manali since 1992 — famous for brownies, fresh cream pastries, eggless cakes & donuts. Baked fresh every morning. Making Moments Sweeter. Order on WhatsApp." />
 <meta name="twitter:image" content="https://thisisgsrana.github.io/rana-bakery-demo/images/chococakeR.jpg" />
 
 <!-- Structured data: LocalBusiness / Bakery -->
@@ -34,9 +34,9 @@
   "@type": "Bakery",
   "name": "Rana Bakery",
   "alternateName": "राणा बेकर्स बहांग",
-  "description": "Bakery & cake shop serving Manali since 1992 — cream rolls, coconut macaroons, jeera biscuits, chocolate balls, custom cakes, pizza, doughnuts, burgers, patties, aata bread, coffee & pastries.",
+  "description": "Family bakery & cake shop in Bahang, Manali since 1992 — baked fresh every morning in small batches. Known for brownies, fresh cream pastries, eggless cakes and donuts, plus chocolate cakes, coconut macaroons, custom cakes, patties, aata bread & coffee.",
   "url": "https://thisisgsrana.github.io/rana-bakery-demo/",
-  "telephone": "+91 82198 85264",
+  "telephone": "+91 83508 90419",
   "image": "https://thisisgsrana.github.io/rana-bakery-demo/images/chococakeR.jpg",
   "priceRange": "₹₹",
   "foundingDate": "1992",
@@ -189,6 +189,34 @@
   .card .body{padding:22px 22px 26px}
   .card h3{font-size:1.4rem;color:var(--brown-deep)}
   .card p{margin:8px 0 0;color:var(--ink-soft);font-size:.96rem}
+  .card .note{margin-top:14px;font-size:.82rem;font-weight:600;color:var(--accent-deep);letter-spacing:.01em}
+
+  /* Feature card — the hero item (Brownies), spans full width */
+  .card--feature{grid-column:1 / -1;display:grid;grid-template-columns:1.05fr .95fr;align-items:stretch}
+  .card--feature .ph{aspect-ratio:auto;min-height:320px}
+  .card--feature .body{display:flex;flex-direction:column;justify-content:center;padding:clamp(28px,4vw,48px)}
+  .card--feature h3{font-size:clamp(1.9rem,3.4vw,2.6rem)}
+  .card--feature p{font-size:1.05rem;max-width:44ch}
+  .card--feature .tag{font-size:.72rem;padding:.5em .95em}
+  @media(max-width:720px){.card--feature{grid-template-columns:1fr}.card--feature .ph{min-height:240px}}
+
+  /* Text-forward card — for items without a real photo yet */
+  .card--text .ph{display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(140deg,var(--cream-2),var(--paper));}
+  .card--text .ph .mono{font-family:"Fraunces",serif;font-style:italic;color:var(--brown);
+    font-size:clamp(2.6rem,7vw,3.4rem);opacity:.9;line-height:1;text-align:center;padding:0 18px}
+
+  /* Wholesale / HORECA — understated, no imagery */
+  .wholesale{background:var(--cream);border-top:1px solid var(--line);padding:clamp(40px,6vw,64px) 0}
+  .wholesale .inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;
+    gap:24px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(24px,3.5vw,36px)}
+  .wholesale .txt{max-width:60ch}
+  .wholesale .lbl{font-family:"Manrope",sans-serif;text-transform:uppercase;letter-spacing:.16em;
+    font-size:.7rem;font-weight:700;color:var(--ink-soft);margin:0 0 8px}
+  .wholesale h3{font-size:clamp(1.2rem,2.4vw,1.5rem);color:var(--brown-deep)}
+  .wholesale p{margin:8px 0 0;color:var(--ink-soft);font-size:.96rem}
+  .wholesale .btn-ghost{flex:none}
 
   /* Custom cake strip */
   .strip{background:linear-gradient(135deg,var(--brown-deep),var(--brown));color:#fff;position:relative;overflow:hidden}
@@ -304,7 +332,7 @@
       <a href="#visit">Visit</a>
     </nav>
     <div class="nav-cta">
-      <a class="btn btn-wa" href="https://wa.me/918219885264?text=Namaste!%20Cake%20order%20karna%20hai" target="_blank" rel="noopener">
+      <a class="btn btn-wa" href="https://wa.me/918350890419?text=Namaste!%20Cake%20order%20karna%20hai" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.2s-.8 1-.9 1.1c-.2.2-.3.2-.6.1-1.6-.8-2.7-1.5-3.7-3.4-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6 2 .8 2.7.9 3.7.8.6-.1 1.8-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/><path d="M12 2A10 10 0 0 0 3.5 17.2L2 22l4.9-1.5A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
         WhatsApp
       </a>
@@ -318,9 +346,9 @@
     <span class="hero-badge"><span class="stars">★</span> 4.1 · 110 Google reviews &nbsp;·&nbsp; Serving Manali since 1992</span>
     <h1 class="reveal">Fresh from the oven, on the road to Rohtang</h1>
     <p class="tagline reveal">Making Moments Sweeter</p>
-    <p class="sub reveal">Bahang · Manali &nbsp;—&nbsp; <b>a favourite snack stop</b> for travellers driving up to the Atal Tunnel &amp; Rohtang Pass.</p>
+    <p class="sub reveal">Bahang · Manali &nbsp;—&nbsp; a small family bakery, <b>baking fresh every morning since 1992</b>. Brownies, cream pastries &amp; eggless cakes on the road to Rohtang.</p>
     <div class="hero-cta reveal">
-      <a class="btn btn-wa" href="https://wa.me/918219885264?text=Namaste!%20Cake%20order%20karna%20hai" target="_blank" rel="noopener">
+      <a class="btn btn-wa" href="https://wa.me/918350890419?text=Namaste!%20Cake%20order%20karna%20hai" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.2s-.8 1-.9 1.1c-.2.2-.3.2-.6.1-1.6-.8-2.7-1.5-3.7-3.4-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6 2 .8 2.7.9 3.7.8.6-.1 1.8-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/><path d="M12 2A10 10 0 0 0 3.5 17.2L2 22l4.9-1.5A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
         Order on WhatsApp
       </a>
@@ -333,46 +361,61 @@
 <section class="bakes" id="menu">
   <div class="wrap">
     <div class="sec-head reveal">
-      <p class="eyebrow">Baked fresh every day</p>
+      <p class="eyebrow">Baked fresh every morning</p>
       <h2>Our signature bakes</h2>
-      <p class="lede">The bakes that keep tourists stopping and locals coming back — from flaky cream rolls to a whole custom cake for your celebration.</p>
+      <p class="lede">Small batches, baked fresh through the day since 1992 — led by our famous fudgy brownies, fresh cream pastries and eggless celebration cakes.</p>
     </div>
     <div class="grid">
 
-      <article class="card reveal">
+      <!--
+        HERO ITEM · BROWNIES — the star, featured first & biggest.
+        IMAGE NOTE: No dedicated brownie photo exists yet. Using chococakeR1.jpg
+        (a dense, dark, fudgy chocolate slice — the most brownie-like shot we have).
+        TODO: replace with a real close-up of Rana Bakery's brownies when available.
+      -->
+      <article class="card card--feature reveal">
         <div class="ph"><span class="tag">Bestseller</span>
-          <img loading="lazy" src="images/cinemenR.jpg" alt="Soft glazed cream rolls" /></div>
-        <div class="body"><h3>Cream Rolls</h3><p>Soft, glazed and curled around sweet cream — the one everyone comes back for.</p></div>
+          <img loading="lazy" src="images/chococakeR1.jpg" alt="Rich, fudgy dark chocolate brownie" /></div>
+        <div class="body">
+          <h3>Brownies</h3>
+          <p>Our most-loved bake — dense, deeply fudgy and rich with chocolate, baked fresh in small batches every morning. The one regulars and travellers come back for.</p>
+        </div>
       </article>
 
       <article class="card reveal">
-        <div class="ph">
+        <div class="ph"><span class="tag">Customer favourite</span>
           <img loading="lazy" src="images/PastryR.jpg" alt="Fresh cream pastry slice" /></div>
-        <div class="body"><h3>Fresh Pastries</h3><p>Layered, creamy and freshly cut through the day — the perfect little treat with chai.</p></div>
-      </article>
-
-      <article class="card reveal">
-        <div class="ph"><span class="tag">Bestseller</span>
-          <img loading="lazy" src="images/doughnutR.jpg" alt="Chocolate sprinkle doughnut" /></div>
-        <div class="body"><h3>Doughnuts</h3><p>Pillowy rings dipped in chocolate and rainbow sprinkles — a favourite with the kids.</p></div>
+        <div class="body"><h3>Fresh Pastries</h3><p>Soft sponge and fresh cream, cut through the day — the perfect little treat with your chai.</p></div>
       </article>
 
       <article class="card reveal">
         <div class="ph">
-          <img loading="lazy" src="images/burgerR.jpg" alt="Loaded burger with fresh patty" /></div>
-        <div class="body"><h3>Burgers &amp; Patties</h3><p>Hot patties in a soft sesame bun — the hearty savoury stop between all the sweet treats.</p></div>
+          <img loading="lazy" src="images/cakeR.jpg" alt="Eggless fresh-cream cake topped with fruit" /></div>
+        <div class="body"><h3>Eggless Cakes</h3><p>Fresh-cream cakes made fully eggless on request — light, moist and dressed with seasonal fruit.</p></div>
       </article>
 
       <article class="card reveal">
         <div class="ph">
-          <img loading="lazy" src="images/pizzaR.jpg" alt="Cheesy fresh-baked pizza" /></div>
-        <div class="body"><h3>Fresh Pizza</h3><p>Hot, cheesy and generous, baked to order — comfort food on the mountain road.</p></div>
+          <img loading="lazy" src="images/doughnutR.jpg" alt="Chocolate sprinkle donut" /></div>
+        <div class="body"><h3>Donuts</h3><p>Pillowy rings dipped in chocolate and rainbow sprinkles — fried fresh, a favourite with the kids.</p></div>
       </article>
 
       <article class="card reveal">
-        <div class="ph"><span class="tag">Healthy bake</span>
-          <img loading="lazy" src="images/buns.png" alt="Healthy whole-wheat Aata Bread loaves" /></div>
-        <div class="body"><h3>आटा ब्रैड · Aata Bread</h3><p>Wholesome whole-wheat bread &amp; aata buns — the healthy bake our regulars ask for by name.</p></div>
+        <div class="ph">
+          <img loading="lazy" src="images/chococakeR.jpg" alt="Chocolate drip cake with piped cream rosettes" /></div>
+        <div class="body"><h3>Chocolate Cakes</h3><p>Layered chocolate sponge under a glossy ganache drip — our go-to for birthdays and celebrations.</p></div>
+      </article>
+
+      <!-- Coconut Macaroons — no product photo yet; tasteful text-forward card. TODO: add real photo. -->
+      <article class="card card--text reveal">
+        <div class="ph"><span class="mono">Coconut<br/>Macaroons</span></div>
+        <div class="body"><h3>Coconut Macaroons</h3><p>Golden, chewy coconut macaroons baked fresh — a long-time counter favourite guests ask for by name.</p></div>
+      </article>
+
+      <!-- Aloo Patties — crowd favourite; no accurate photo (burgerR is a cheeseburger), so text-forward card. TODO: add real aloo patty photo. -->
+      <article class="card card--text reveal">
+        <div class="ph"><span class="tag">Bestseller</span><span class="mono">Aloo<br/>Patties</span></div>
+        <div class="body"><h3>Aloo Patties</h3><p>Hot, flaky and spiced just right — our savoury crowd favourite and the perfect snack for the road.</p></div>
       </article>
 
     </div>
@@ -380,12 +423,13 @@
     <div class="also reveal">
       <p class="lbl">Also from the counter</p>
       <div class="chips">
-        <span class="chip"><span class="d"></span>Coconut Macaroons</span>
+        <span class="chip"><span class="d"></span>Cream Rolls</span>
         <span class="chip"><span class="d"></span>Jeera Biscuits</span>
         <span class="chip"><span class="d"></span>Chocolate Balls</span>
+        <span class="chip"><span class="d"></span>Fresh Pizza</span>
         <span class="chip"><span class="d"></span>Buns &amp; Fan</span>
+        <span class="chip"><span class="d"></span>आटा ब्रैड · Aata Bread</span>
         <span class="chip"><span class="d"></span>Fresh Coffee</span>
-        <span class="chip"><span class="d"></span>Custom Cakes</span>
       </div>
     </div>
   </div>
@@ -397,8 +441,8 @@
     <div class="reveal">
       <p class="eyebrow" style="color:var(--gold)">Order ahead</p>
       <h2>A cake made for your moment</h2>
-      <p>Birthdays, weddings, anniversaries or a surprise on the way to the mountains — we bake fresh, custom cakes to your theme and colours. Ask us about our much-loved <span class="unicorn">custom Unicorn cake</span>. Message a day ahead and we'll have it ready.</p>
-      <a class="btn btn-wa" href="https://wa.me/918219885264?text=Namaste!%20Cake%20order%20karna%20hai" target="_blank" rel="noopener">
+      <p>Birthdays, weddings, anniversaries or a surprise on the way to the mountains — we bake fresh, custom cakes to your theme and colours, eggless on request. Ask us about our much-loved <span class="unicorn">custom Unicorn cake</span>. Message a day ahead and we'll have it ready.</p>
+      <a class="btn btn-wa" href="https://wa.me/918350890419?text=Namaste!%20Cake%20order%20karna%20hai" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.2s-.8 1-.9 1.1c-.2.2-.3.2-.6.1-1.6-.8-2.7-1.5-3.7-3.4-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6 2 .8 2.7.9 3.7.8.6-.1 1.8-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/><path d="M12 2A10 10 0 0 0 3.5 17.2L2 22l4.9-1.5A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
         Order your cake
       </a>
@@ -504,7 +548,7 @@
         </div>
         <div class="visit-row">
           <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
-          <div><h4>Phone &amp; WhatsApp</h4><p><a href="tel:+918219885264">+91 82198 85264</a></p></div>
+          <div><h4>Phone &amp; WhatsApp</h4><p><a href="tel:+918350890419">+91 83508 90419</a><br/><span style="font-size:.86rem;color:var(--ink-soft);font-weight:500">or call: <a href="tel:+918219885264">+91 82198 85264</a></span></p></div>
         </div>
         <div class="badges">
           <span class="pill"><span class="d"></span>Delivery available</span>
@@ -513,7 +557,7 @@
         </div>
         <div style="display:flex;flex-wrap:wrap;gap:12px">
           <a class="btn btn-solid" href="https://www.google.com/maps?q=Rana+Bakery+Bahang+Manali" target="_blank" rel="noopener">Get Directions</a>
-          <a class="btn btn-wa" href="https://wa.me/918219885264?text=Namaste!%20Cake%20order%20karna%20hai" target="_blank" rel="noopener">
+          <a class="btn btn-wa" href="https://wa.me/918350890419?text=Namaste!%20Cake%20order%20karna%20hai" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.2s-.8 1-.9 1.1c-.2.2-.3.2-.6.1-1.6-.8-2.7-1.5-3.7-3.4-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6 2 .8 2.7.9 3.7.8.6-.1 1.8-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/><path d="M12 2A10 10 0 0 0 3.5 17.2L2 22l4.9-1.5A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
             Message us
           </a>
@@ -526,6 +570,20 @@
   </div>
 </section>
 
+<!-- ============ WHOLESALE / HORECA ============ -->
+<section class="wholesale" aria-label="Wholesale and HORECA supply">
+  <div class="wrap">
+    <div class="inner reveal">
+      <div class="txt">
+        <p class="lbl">For businesses</p>
+        <h3>Wholesale &amp; HORECA supply</h3>
+        <p>Frozen items, eggs, and everyday essentials for hotels, restaurants and cafés around Manali. Bulk enquiries welcome — message us for rates.</p>
+      </div>
+      <a class="btn btn-ghost" href="https://wa.me/918350890419?text=Wholesale%20enquiry" target="_blank" rel="noopener">Bulk enquiry on WhatsApp →</a>
+    </div>
+  </div>
+</section>
+
 <!-- ============ FOOTER ============ -->
 <footer>
   <div class="wrap">
@@ -533,7 +591,7 @@
       <div>
         <img class="foot-logo" src="images/logo_white.png" alt="Rana Bakery" />
         <div class="hindi">राणा बेकर्स बहांग</div>
-        <p style="margin:0 0 10px;max-width:34ch">Serving Manali since 1992 · <em>Making Moments Sweeter</em>. Fresh bakes, cakes, coffee &amp; snacks — baked daily in Bahang, Manali.</p>
+        <p style="margin:0 0 10px;max-width:34ch">A family bakery since 1992 · <em>Making Moments Sweeter</em>. Brownies, fresh pastries, eggless &amp; custom cakes — baked fresh every morning in Bahang, Manali.</p>
       </div>
       <div>
         <h5>Visit</h5>
@@ -543,8 +601,9 @@
       </div>
       <div>
         <h5>Order &amp; Contact</h5>
-        <a href="tel:+918219885264">+91 82198 85264</a>
-        <a href="https://wa.me/918219885264?text=Namaste!%20Cake%20order%20karna%20hai" target="_blank" rel="noopener">Order on WhatsApp →</a>
+        <a href="tel:+918350890419">+91 83508 90419</a>
+        <a href="tel:+918219885264">or call: +91 82198 85264</a>
+        <a href="https://wa.me/918350890419?text=Namaste!%20Cake%20order%20karna%20hai" target="_blank" rel="noopener">Order on WhatsApp →</a>
         <a href="https://www.google.com/maps/search/Rana+Bakery+Bahang+Manali" target="_blank" rel="noopener">Reviews on Google →</a>
       </div>
     </div>
@@ -556,7 +615,7 @@
 </footer>
 
 <!-- ============ FLOATING WHATSAPP ============ -->
-<a class="fab" href="https://wa.me/918219885264?text=Namaste!%20Cake%20order%20karna%20hai" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<a class="fab" href="https://wa.me/918350890419?text=Namaste!%20Cake%20order%20karna%20hai" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
   <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.2s-.8 1-.9 1.1c-.2.2-.3.2-.6.1-1.6-.8-2.7-1.5-3.7-3.4-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6 2 .8 2.7.9 3.7.8.6-.1 1.8-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/><path d="M12 2A10 10 0 0 0 3.5 17.2L2 22l4.9-1.5A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.9.9-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
 </a>
 
