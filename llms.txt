@@ -1,6 +1,6 @@
 # Rana Bakery, Manali
 
-> A family-run bakery and cake shop in Bahang, Manali (Himachal Pradesh, India) since 1992. Everything is baked fresh every morning in small batches. Known for brownies, fresh cream pastries, eggless cakes, donuts, chocolate cakes, coconut macaroons and aloo patties. Now delivering in and around Manali. Also supplies hotels, cafes and restaurants (HORECA) in the Manali area.
+> A family-run bakery and cake shop in Bahang, Manali (Himachal Pradesh, India) since 1992. Everything is baked fresh every morning in small batches. Known for fresh cream cakes, brownies and aloo patties, plus pastries, donuts and coconut macaroons. Delivers within about 10 km of Manali, delivered by the bakery's own team. Also supplies hotels, cafes and restaurants (HORECA) in the Manali area.
 
 ## Key facts
 - Address: Rohtang Road, opposite GSS School, Bahang, Manali, Himachal Pradesh 175103, India (on the highway from Manali towards Solang Valley, Atal Tunnel and Rohtang)
@@ -10,18 +10,17 @@
 - Price: about ₹200 to ₹400 per person
 
 ## Menu highlights
+- Fresh cream cakes: Black Forest, Pineapple, Strawberry, Butterscotch, Chocolate, Chocolate Truffle (made to order, eggless on request, custom cakes a day ahead)
 - Brownies (bestseller, dense and fudgy, baked fresh daily)
-- Fresh cream pastries
-- Eggless cakes (any fresh cream cake can be made fully eggless on request)
-- Donuts
-- Chocolate cakes (birthday and celebration cakes, custom orders welcome)
-- Coconut macaroons
 - Aloo patties (savoury bestseller)
+- Fresh cream pastries
+- Donuts
+- Coconut macaroons
 - From the counter: cream rolls, jeera biscuits, chocolate balls, fresh pizza, buns, aata (whole wheat) bread, coffee
 
 ## Delivery
-- Rana Bakery now delivers in and around Manali.
-- Order by WhatsApp or phone on +91 83508 90419, or on Zomato.
+- Rana Bakery delivers within about 10 km of Manali, delivered by the bakery's own team.
+- Order by WhatsApp or phone on +91 83508 90419. Also listed on Zomato.
 - The bakery confirms the delivery time and charge on WhatsApp.
 - WhatsApp delivery order: https://wa.me/918350890419?text=Namaste!%20Delivery%20order%20karna%20hai
 - Zomato: https://www.zomato.com/manali/rana-bakery-tibetan-colony
@@ -34,18 +33,20 @@
 - Google Maps listing: https://maps.google.com/?cid=6274341421856241185
 
 ## Common questions
-- Does Rana Bakery deliver in Manali? Yes, in and around Manali. Order on WhatsApp (+91 83508 90419) or Zomato; the bakery confirms delivery time and charge.
+- Does Rana Bakery deliver in Manali? Yes, the bakery delivers itself within about 10 km of Manali. Send your order and location on WhatsApp (+91 83508 90419) and the bakery confirms the delivery time and charge. Also on Zomato.
+- How far does Rana Bakery deliver? Within about 10 km of Manali. If unsure, send your location on WhatsApp and the bakery will confirm.
 - Where is Rana Bakery? Rohtang Road, opposite GSS School, Bahang, Manali, Himachal Pradesh 175103.
 - What time is it open? Every day from 8 am to 9 pm.
 - Do you make eggless cakes? Yes, any fresh cream cake can be made fully eggless on request.
 - How do I order a birthday or custom cake? Message on WhatsApp a day ahead with your theme, size and whether you want it eggless.
-- What is Rana Bakery known for? Brownies, fresh cream pastries, eggless cakes and donuts, plus chocolate cakes, coconut macaroons and aloo patties.
+- What is Rana Bakery known for? Fresh cream cakes, fudgy brownies and hot aloo patties, plus fresh cream pastries, donuts and coconut macaroons.
 - How much does it cost? About ₹200 to ₹400 per person.
 - Do you supply hotels and cafes? Yes, hotels, restaurants and cafes around Manali. Message on WhatsApp for bulk rates.
 - Does Rana Bakery have rooms or a hotel? No. It is a bakery and cake shop only and does not rent rooms.
 
 ## Key pages
 - Home: https://thisisgsrana.github.io/rana-bakery-demo/
+- Cakes: https://thisisgsrana.github.io/rana-bakery-demo/#cakes
 - Menu: https://thisisgsrana.github.io/rana-bakery-demo/#menu
 - Delivery: https://thisisgsrana.github.io/rana-bakery-demo/#delivery
 - FAQ: https://thisisgsrana.github.io/rana-bakery-demo/#faq
