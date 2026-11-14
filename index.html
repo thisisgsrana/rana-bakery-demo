@@ -1,6 +1,26 @@
 <!doctype html>
 <html lang="en">
 <head>
+<!-- Google tag (Google Analytics property "Rana Bakery", stream G-TBVJPS7K8D) -->
+<script async src="https://www.googletagmanager.com/gtm.js?id=G-TBVJPS7K8D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  // Named events for the buttons that matter: WhatsApp, call, directions, Zomato
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a) return;
+    var href = a.getAttribute('href'), name = null;
+    if (href.indexOf('wa.me') > -1) name = 'whatsapp_click';
+    else if (href.indexOf('tel:') === 0) name = 'call_click';
+    else if (href.indexOf('maps.google') > -1) name = 'directions_click';
+    else if (href.indexOf('zomato.com') > -1) name = 'zomato_click';
+    if (!name) return;
+    var sec = a.closest('section, header, footer, nav');
+    gtag('event', name, { link_section: (sec && (sec.id || sec.className.split(' ')[0])) || 'floating' });
+  }, true);
+</script>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Cakes, Brownies &amp; Patties in Manali, Delivered | Rana Bakery</title>
