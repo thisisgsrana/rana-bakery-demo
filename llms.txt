@@ -35,7 +35,7 @@
 - Minimum order for delivery: ₹400. No minimum at the bakery counter.
 - The bakery replies on WhatsApp with one price for the order and a delivery time.
 - WhatsApp delivery order: https://wa.me/918350890419?text=Namaste!%20Delivery%20order%20karna%20hai
-- Zomato: https://www.zomato.com/manali/rana-bakery-tibetan-colony
+- Zomato: https://www.zomato.com/manali/rana-bakery-1-tibetan-colony
 
 ## Services
 - Walk-in counter sales
